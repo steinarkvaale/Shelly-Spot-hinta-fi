@@ -11,7 +11,7 @@ let AllowedPrice = 0; // Daytime price that is always allowed. Night hours allow
 let BackupHours = [3, 4, 5]; // Hours when the relay is activated if control data cannot be retrieved.
 
 // CODE
-let url = "https://api.spot-hinta.fi/PlanAhead?priorityHours=" + NightHours.join() + "&priceModifier=" + PriceDifference + "&ranksAllowed=" + Ranks.join() + "&priceAlwaysAllowed=" + AllowedPrice + "?region=" + Region;
+let url = "https://api.spot-hinta.fi/PlanAhead?priorityHours=" + NightHours.join() + "&priceModifier=" + PriceDifference + "&ranksAllowed=" + Ranks.join() + "&priceAlwaysAllowed=" + AllowedPrice + "&region=" + Region;
 let hour = -1;
 let nextMessage = new Date(new Date().getTime() + 2 * 60 * 1000);
 let previousAction = "";
