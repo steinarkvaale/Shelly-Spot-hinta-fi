@@ -12,7 +12,7 @@ let Inverted = false; // If "true", relay logic is inverted (= relay is turned O
 
 // Don't touch below!
 print("Minimal-Heating: Script has started succesfully. The first relay action happens in 30 seconds.");
-let cHour = ""; let Executed = false; let urlToCall = ""; let previousAction = ""; let invertedOn = "true"; let invertedOff = "false"
+let cHour = ""; let Executed = false; let urlToCall = ""; let previousAction = ""; let invertedOn = "true"; let invertedOff = "false";
 if (Inverted === true) { invertedOn = "false"; invertedOff = "true"; }
 if (OnlyNightHours == false) { urlToCall = "https://api.spot-hinta.fi/JustNowRank/" + CheapestHours + "/" + PriceAlwaysAllowed + "?region=" + Region; print("Minimal-Heating: Url to be used: " + urlToCall); }
 else { urlToCall = "https://api.spot-hinta.fi/JustNowRankNight?rank=" + CheapestHours + "&priceAlwaysAllowed=" + PriceAlwaysAllowed + "&region=" + Region; print("Minimal-Heating: Url to be used: " + urlToCall); }
