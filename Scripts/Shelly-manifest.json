@@ -10,6 +10,11 @@
     "description": "Todella helppo pörssiohjaus lämminvesivaraajalle, jolla voi lämmittää halutun tuntimäärän ja samalla huomoida yösiirron halvemman siirtohinnan. (Finnish region)"
   },
   {
+    "fname": "Shelly-WaterHeater-Transfer.js",
+    "title": "Hot water storage tank - Heating that takes into account the night time transfer price",
+    "description": "Really easy control for a hot water heater, with which you can heat the desired number of hours and at the same time utilize the cheaper transfer price for night transfer."
+  },
+  {
     "fname": "Shelly-Pikakoodi.js",
     "title": "Pikakoodi - Monenlaisia pörssiohjauksia pikakoodeilla",
     "description": "Aseta haluamasi pikakoodi skriptiin lukuisista vaihtoehdoista fiksuun pörssiohjaukseen. (Finnish region)"
