@@ -3,12 +3,12 @@
 
 // SETTINGS
 let Region = "NO1"; // Supported regions: DK1, DK2, EE, FI, LT, LV, NO1, NO2, NO3, NO4, NO5, SE1, SE2, SE3, SE4
-let Ranks = [1, 2, 3]; // List the 'ranks' (i.e., the hour's order number by price) when the relays are activated
+let Ranks = [1, 2, 3, 4]; // List the 'ranks' (i.e., the hour's order number by price) when the relays are activated
 let Relays = [0]; // Numbers of the relays to be controlled. For example, [0,1,2] to control three relays
 let NightHours = [22, 23, 0, 1, 2, 3, 4, 5, 6]; // Night shift hours. Normally, no need to change these (even during daylight saving time changes).
 let PriceDifference = -1.02; // How much cheaper is the electricity transfer price during night shift?
-let AllowedPrice = 0; // Daytime price that is always allowed. Night hours allow prices higher by the PriceDifference amount.
-let BackupHours = [3, 4, 5]; // Hours when the relay is activated if control data cannot be retrieved.
+let AllowedPrice = -999; // Daytime price that is always allowed. Night hours allow prices higher by the PriceDifference amount.
+let BackupHours = [2, 3, 4, 5]; // Hours when the relay is activated if control data cannot be retrieved.
 
 // CODE
 let url = "https://api.spot-hinta.fi/PlanAhead?priorityHours=" + NightHours.join() + "&priceModifier=" + PriceDifference + "&ranksAllowed=" + Ranks.join() + "&priceAlwaysAllowed=" + AllowedPrice + "&region=" + Region;
